@@ -1,0 +1,11 @@
+" leaderキー
+let mapleader = "<Space>"
+
+nnoremap <Leader>kd :vsc 編集.ドキュメントのフォーマット
+nnoremap <Leader>kf :vsc 編集.選択範囲のフォーマット
+
+" インサートモードを抜けたときにIMEオフ
+inoremap <ESC> <ESC>:set iminsert=0<CR>
+
+" OSのクリップボードと共有
+set clipboard=unnamed
