@@ -9,7 +9,8 @@
 
 
 " フォルダの移動( :w で新規保存した時、デスクトップ上に作る設定)
-:cd $HOME/desktop
+let home = expand('~')
+execute 'cd' home
 
 " setting
 "文字コードをUFT-8に設定
