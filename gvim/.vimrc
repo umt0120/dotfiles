@@ -1,16 +1,19 @@
 " 他のアプリケーションとコピー＆ペーストできるようになるオプション
-:set clipboard+=unnamed
+set clipboard+=unnamed
 
 " 印刷オプション: 行番号の表示ONとシンタックスハイライトのOFF
-:set printoptions=number:y,syntax:n
+set printoptions=number:y,syntax:n
 
 " 印刷フォントの設定
-:set printfont=CamingoCode:h12
+set printfont=CamingoCode:h12
 
 
 " フォルダの移動( :w で新規保存した時、デスクトップ上に作る設定)
 let home = expand('~')
 execute 'cd' home
+
+" カレントディレクトリを自動で変更
+set autochdir
 
 " setting
 "文字コードをUFT-8に設定
@@ -27,6 +30,8 @@ set hidden
 set showcmd
 " バックスペース
 set backspace=indent,eol,start
+" pathにサブディレクトリを含める
+set path+=**
 
 
 " 見た目系
